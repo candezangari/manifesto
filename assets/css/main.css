@@ -1469,6 +1469,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		font-weight: 600;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1933,49 +1934,6 @@
 			color: #76ddff;
 		}
 
-/* Image */
-
-	.image {
-		border-radius: 3px;
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
-
-		.image img {
-			border-radius: 3px;
-			display: block;
-		}
-
-		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
-			top: 0.25em;
-		}
-
-		.image.right {
-			float: right;
-			margin: 0 0 2em 2em;
-			top: 0.25em;
-		}
-
-		.image.left, .image.right {
-			max-width: 40%;
-		}
-
-			.image.left img, .image.right img {
-				width: 100%;
-			}
-
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-			.image.fit img {
-				width: 100%;
-			}
 
 /* List */
 
@@ -2641,7 +2599,6 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
 			color: #c7ebe8;
 		}
 
@@ -2799,7 +2756,6 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
 			color: #d3d4e4;
 		}
 
@@ -3102,6 +3058,33 @@
 					background-color: rgba(0, 0, 0, 0.1);
 				}
 
+			.wrapper.stylelogics{
+				background-color: #ec6a62
+			}
+
+			.wrapper.stylelogics2{
+				background: rgba(236, 106, 98, .80);
+			}
+
+			.wrapper.styleworld{
+				background-color: #f8b000
+			}
+
+			.wrapper.styleworld2{
+				background: rgba(248, 176, 0, .85)
+			}
+
+			.wrapper.stylehuman{
+				background-color: #2879b5
+			}
+			.wrapper.stylehuman2{
+				background: rgba(40, 121, 181, .80)
+			}
+
+			.wrapper.styleconv{
+				background-color: #00a87a
+			}
+
 			@media screen and (max-width: 736px) {
 
 				.wrapper.style5 .features li {
@@ -3125,6 +3108,54 @@
 			}
 
 		}
+
+/* Image */
+
+	.image {
+		border-radius: 3px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+		filter: alpha(opacity=100);
+		opacity: 1;
+	}
+
+		.image img {
+			border-radius: 3px;
+			display: block;
+			filter: alpha(opacity=100);
+			opacity: 1;
+		}
+
+		.image.left {
+			float: left;
+			margin: 0 2em 2em 0;
+			top: 0.25em;
+		}
+
+		.image.right {
+			float: right;
+			margin: 0 0 2em 2em;
+			top: 0.25em;
+		}
+
+		.image.left, .image.right {
+			max-width: 40%;
+		}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
 
 /* Page Wrapper + Menu */
 
